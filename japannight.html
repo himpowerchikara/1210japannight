@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>japannight</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+
+    <style>
+    *{margin-top:0; margin-left:0; margin-right:0; overflow-x:hidden; overflow-y:hidden;}
+ body{background: none;   }
+
+
+     
+      
+ 
+
+
+   
+    
+    
+
+
+
+  #imgone{width:4212px; height:100%; position:fixed; left:0%; top:0%; filter:blur(3px); z-index: -5}
+#imgtwo{width:4212px; height:100%; position:absolute; left:0%; top:0%; }
+#imgthree{width:1621px; height:100%; position:absolute; left:2500px; top:0%; }
+#imgfour{width:518px; height:100%; position:absolute; left:2500px; top:0%; }
+#imgfive{width:1991px; height:100%; position:absolute; left:0px; top:0%; 
+  margin-left: 420px;
+ z-index: -4; filter: blur(7px); }
+#imgsix{width:778px; height:100%; position:absolute; left:1500px; top:0%; }
+#imgseven{width:1636px; height:100%; position:absolute; left:200px; top:0%; }
+#imgeight{width:481px; height:100%; position:absolute; left:0px; top:0%; 
+}
+#imgnine{width:649px; height:100%; position:absolute; left:1500px; top:0%; }
+#imgten{width:1974px; height:100%; position:absolute; left:-500px; top:0%; margin-left: 1000px; }
+
+#imgeleven{width:650px; height:100%; position:absolute; left:2000px; top:0%; z-index:10;}
+#imgtwelve{width:4212px; height:100%; position:absolute; left:0px; top:0%; }
+#imgthirteen{width:657px; height:100%; position:absolute; left:0px; top:0%;
+
+z-index:10; }
+#imgthirteencopy{width:657px; height:100%; position:absolute; left:0px; top:0%;
+  margin-left: 1000px;
+z-index:10; }
+#imgthirteencopyy{width:657px; height:100%; position:absolute; left:0px; top:0%;
+  margin-left: 1500px;
+z-index:10; }
+#imgfourteen{width:4212px; height:100%; position:absolute; left:0px; top:0%; }
+#imgfourteent{width:4212px; height:100%; position:absolute; left:0px; top:0%; }
+#imgfifteen{width:875px; height:723px; position:absolute; left:1000px; top:10%; }
+#imgfifteent{width:875px; height:723px; position:absolute; left:2600px; top:10%; }
+#imgfifteenth{width:875px; height:723px; position:absolute; left:2300px; top:0%; }
+#imgfifteenf{width:875px; height:723px; position:absolute; left:1500px; top:-10%; }
+
+
+
+     #sol {width:200px; height:200px; position:fixed; left:45%; bottom: 5%; z-index:9;}
+
+     #soll {width:0px; height:0px; position:fixed; left:44%; bottom: 5%; z-index:9;}
+
+     #monitor{width:0px; height:0px; background:none; position:fixed; right:0;
+      color:white; text-align:center; line-height:40px; z-index:5;}
+
+
+
+      #doip{width:350px; position:absolute;
+  top:70px; left:40px; font-size: 40px; color:white; transition:all 1s;}
+
+
+
+      html{font-family: 'Libre Baskerville', serif;}
+    </style>
+  </head>
+
+  <body>
+ <div id="myDIV" onwheel="myFunction()">
+
+
+
+
+<img id= imgone src="sq5_1_back.png">
+    <img id= imgtwo src="sq5_2_gr.png">
+    <img id= imgthree src="sq5_3_house.png">
+    <img id= imgfour src="sq5_4_trail.png">
+    <img id= imgfive src="sq5_5_smoke.png"> 
+    <img id= imgsix src="sq5_6_top.png">
+    <img id= imgseven src="sq5_7_house.png">
+    <img id= imgeight src="sq5_8_panel.png">
+
+    <img id= imgnine src="sq5_9_stairback.png">
+    <img id= imgten src="sq5_10_trash.png">
+    <img id= imgeleven src="sq5_11_stair.png">
+    <img id= imgtwelve src="sq5_12_forward.png">   
+    <img id= imgthirteen src="sq5_13_sol.png">
+<img id= imgthirteencopy src="sq5_13_sol.png">
+<img id= imgthirteencopyy src="sq5_13_sol.png">
+
+    <img id= imgfourteen src="sq5_14_light.png">
+    <img id= imgfourteent src="sq5_14_light.png">
+
+    <img id= imgfifteen src="sq5_fire.png">
+     <img id= imgfifteent src="sq5_fire.png">
+      <img id= imgfifteenth src="sq5_fire.png">
+      <img id= imgfifteenf src="sq5_fire.png">
+
+    <img id = sol src="오른발.png">
+    <img id = soll src="왼발.png">
+
+
+<div id= monitor></div>
+
+<div id= doip>Chapter 5  </div>
+
+
+
+</div>
+
+
+  <script type="text/javascript">
+
+
+
+window.onwheel = function(e){
+  var scroll = 50;
+  if(e.deltaY < 0){ scroll = -scroll; } 
+  window.scrollBy(scroll, 0); 
+}
+  
+
+
+
+ window.onscroll = function(e){
+       
+         imgfive.style.left = +(window.pageXOffset/1.5)+"px";
+        imgthirteen.style.left = +(window.pageXOffset/2)+"px";
+        imgthirteencopy.style.left = +(window.pageXOffset/3)+"px";
+        imgthirteencopyy.style.left = +(window.pageXOffset/5)+"px";
+       
+       
+      
+     
+          
+
+
+
+           var t= document.documentElement.scrollLeft;
+  monitor.innerHTML = t +"px";
+  
+
+ }
+
+   
+
+  var toggle = "off";
+
+
+   function myFunction() {
+   
+
+if(toggle == "off"){
+      toggle = "on";
+    sol.style.width= "0px";
+
+   soll.style.width="200px";
+   soll.style.height="200px";
+      }
+      else{ 
+      toggle = "off";
+       soll.style.width= "0px";
+
+   sol.style.width="200px";
+   sol.style.height="200px";
+      
+      }
+      }
+
+
+
+
+    </script>
+
+  </body>
+</html>
